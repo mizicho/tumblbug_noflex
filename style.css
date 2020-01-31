@@ -17,10 +17,20 @@ body{
     float:left;
     padding:10px;
 }
-.header.left{
+.header.left, .right{
     width:40%;
     text-align: center;
     line-height: 3rem;
+}
+
+#wordpadding{
+    padding:2rem;
+}
+
+#headimage{
+    width:2rem;
+    height:2rem;
+    vertical-align:middle;
 }
 
 .header.middle{
@@ -28,10 +38,14 @@ body{
     text-align: center;
     line-height: 3rem;
 }
-.header.right{
-    width:40%;
-    text-align: center;
-    line-height: 3rem;
+#widgetimage{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70rem;
+    height: 30rem;
+    position: relative;
+    
 }
 
 
