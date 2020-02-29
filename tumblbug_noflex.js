@@ -22,26 +22,33 @@ const projects = [{title: "[월간쳔지서비스]당신깨보내는작가의편
 const projects_div = document.querySelector(".carousel-container")
 console.log(projects_div)
 
-function add_project(project){
+function show_project(project){
     const item_div = document.createElement("div")
-    const img = document.createElement("img")
-    const p = document.createElement("p")
+    item_div.className = "item"
+    // const img = document.createElement("img")
+    // const p = document.createElement("p")
+    const project_div = document.createElement("div")
+    project_div.className = "project-info"
+
+    const project_title_div = document.createElement("div")
+    project_title_div.className = "project-title"
+
+    const title_div = document.createElement("div")
+    project_title_div.className = "title"
     
-    item_div.className = 'item'
-    img.className = 'carousel-image'
-    p.className = 'carousel-test'
-    p.innerText = project.title
+    title_div.innerText = project.title
 
-    img.src = project.thumbnail
-
-    item_div.appendChild(img)
-    item_div.appendChild(p)
+    project_title_div.appendChild(title_div)
+    project_div.appendChild(project_title_div)
+    item_div.appendChild(project_div)
 
     projects_div.appendChild(item_div)
+    console.log(project.title)
+
 }
-    projects.forEach((project) => {
-        add_project(project);
-    })
+projects.forEach((project) => {
+    show_project(project);
+})
 
 
 
