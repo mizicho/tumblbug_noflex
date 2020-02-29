@@ -46,40 +46,74 @@ body{
     height: 25rem;
     position: relative;
 }
-.Container{
+.container{
     display:block;
-    margin-left:20%;
-    margin-right:20%;
+    width: 980px;
+    margin: 0px auto;
 }
-.EditorsPickCarousel{
-    margin-top: 6vh;
+.editors-pick-carousel{
+    margin: 36px 0px 0px;
 }
-.CarouselHeader{
+.carousel-header{
     font-size: 1.3em;
-    margin-bottom: 1rem;
+    margin: 0px -1.5rem 0px 0px;
+    padding: 0px 1rem;
 }
-.CarouselContainer{
+.carousel-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    grid-template-columns: 245px 245px 245px 245px;
+}
+.items{
+    height: 100%;
 }
 .item{
+    margin: 15px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-image: initial;
+    border-radius: 4px;
+}
+.carousel-image{
+    width:225px;
+    height:155px;
+}
+.carousel-test{
+    overflow: hidden;
+    max-width: 100%;
+    padding: 1rem 1.2rem;
+    line-height: 1.6;
+}
+.item-text{
+    height:60px;
+    word-break: break-all;    
+    color: rgb(60, 55, 55);
+
+}
+.title{
+    margin-bottom: 0px;
+    font-size: 0.8rem;
+    word-spacing: -1px;
+    margin-top: 0em;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.maker{
+    margin:0em;
+    font-size: 0.3rem;
+    color:rgb(60, 55, 55);
+}
+svg{
+    overflow: hidden;
+    margin-top:0.5em;
     width:100%;
-    height: 15rem;
-    background-color: white;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
+    height: 5px;
+}
+.timeicon{
+    width:10px;
+}
+.timetext{
     
-}
-.carouselImage{
-    width:12rem;
-    height:11rem;
-    background-color: white;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
-.carouselTest{
-    font-size:0.9em;
-    font-weight: 600;
-    padding-left:0.5rem;
 }
